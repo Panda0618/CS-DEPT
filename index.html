@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Kider - Preschool Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<!-- B.Sc. Syllabus Modal -->
+<div class="modal fade" id="bscSyllabusModal" tabindex="-1" aria-labelledby="bscSyllabusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bscSyllabusModalLabel">Download B.Sc. Syllabus</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Select a semester to download the syllabus:</p>
+        <div class="d-grid gap-2">
+          <a href="syllabus/bsc1.pdf" class="btn btn-outline-primary" download>Semester 1</a>
+          <a href="syllabus/bsc2.pdf" class="btn btn-outline-primary" download>Semester 2</a>
+          <a href="syllabus/bsc3.pdf" class="btn btn-outline-primary" download>Semester 3</a>
+          <a href="syllabus/bsc4.pdf" class="btn btn-outline-primary" download>Semester 4</a>
+          <a href="syllabus/bsc5.pdf" class="btn btn-outline-primary" download>Semester 5</a>
+          <a href="syllabus/bsc6.pdf" class="btn btn-outline-primary" download>Semester 6</a>
+          <a href="syllabus/bsc7.pdf" class="btn btn-outline-primary" download>Semester 7</a>
+          <a href="syllabus/bsc8.pdf" class="btn btn-outline-primary" download>Semester 8</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- M.Sc. Syllabus Modal -->
+<div class="modal fade" id="mscSyllabusModal" tabindex="-1" aria-labelledby="mscSyllabusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mscSyllabusModalLabel">Download M.Sc. Syllabus</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Select a semester to download the syllabus:</p>
+        <div class="d-grid gap-2">
+          <a href="syllabus/msc1.pdf" class="btn btn-outline-primary" download>Semester 1</a>
+          <a href="syllabus/msc2.pdf" class="btn btn-outline-primary" download>Semester 2</a>
+          <a href="syllabus/msc3.pdf" class="btn btn-outline-primary" download>Semester 3</a>
+          <a href="syllabus/msc4.pdf" class="btn btn-outline-primary" download>Semester 4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BCA Syllabus Modal -->
+<div class="modal fade" id="bcaSyllabusModal" tabindex="-1" aria-labelledby="bcaSyllabusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bcaSyllabusModalLabel">Download BCA Syllabus</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Select a semester to download the syllabus:</p>
+        <div class="d-grid gap-2">
+          <a href="syllabus/bca1.pdf" class="btn btn-outline-primary" download>Semester 1</a>
+          <a href="syllabus/bca2.pdf" class="btn btn-outline-primary" download>Semester 2</a>
+          <a href="syllabus/bca3.pdf" class="btn btn-outline-primary" download>Semester 3</a>
+          <a href="syllabus/bca4.pdf" class="btn btn-outline-primary" download>Semester 4</a>
+          <a href="syllabus/bca5.pdf" class="btn btn-outline-primary" download>Semester 5</a>
+          <a href="syllabus/bca6.pdf" class="btn btn-outline-primary" download>Semester 6</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- BCA Syllabus Modal End-->
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Department of Computer Science</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="classes.html" class="nav-item nav-link">Classes</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="facility.html" class="dropdown-item">School Facilities</a>
+                            <a href="team.html" class="dropdown-item">Popular Teachers</a>
+                            <a href="call-to-action.html" class="dropdown-item">Become A Teachers</a>
+                            <a href="appointment.html" class="dropdown-item">Make Appointment</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">Code, Create,<br> Conquer!</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Building strong foundations in software, systems, and<br> innovation.</p>
+                            <a href="#overview" class="btn btn-warning rounded-pill py-sm-3 px-sm-5 animated slideInLeft">About Us</a>
+                           <a href="#courses" class="btn btn-light text-dark fw-semibold rounded-pill py-sm-3 px-sm-5 animated slideInRight">View Courses</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">Welcome to a Campus That Inspires Learning and Growth</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">A place where tradition, excellence, and a vibrant student life come together.</p>
+                            <a href="#overview" class="btn btn-warning rounded-pill py-sm-3 px-sm-5 animated slideInLeft">About Us</a>
+                            <a href="#courses" class="btn btn-light text-dark fw-semibold rounded-pill py-sm-3 px-sm-5 animated slideInRight">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Department Facilities</h1>
+                    <p>Discover state-of-the-art facilities designed to support innovation and learning.<br>
+From smart labs to high-speed Wi-Fi, we empower every student’s journey.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa-solid fa-computer fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Specialized Computer Labs</h3>
+                                <p class="mb-0">Equipped with modern systems to support advanced learning and hands-on coding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa-solid fa-screwdriver-wrench fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Tinkering Lab</h3>
+                                <p class="mb-0">A creative space where innovation, experimentation, and ideas come to life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa-solid fa-chalkboard-user fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Smart Classes</h3>
+                                <p class="mb-0">Interactive classrooms designed to enhance digital learning experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                               <i class="fa-solid fa-wifi fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Internet and<br> Wi-Fi Access</h3>
+                                <p class="mb-0">Seamless high-speed connectivity across campus for uninterrupted learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+
+<!-- Overview Start -->
+<div id="overview" class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-4">Overview:</h1>
+                <p>
+                    The <strong>Department of Computer Science</strong> was established as an independent entity in the academic year <strong>2000-2001</strong>. Since then, it has been dedicated to advancing <strong>technical education</strong> and <strong>scientific research</strong> in the rapidly evolving fields of computer science and its applications. As an <strong>autonomous department</strong> under Government Holkar (Model Autonomous) Science College, Indore (M.P.), affiliated with DAVV, Indore, our mission is to nurture skilled computer science specialists ready to tackle <strong>global challenges</strong>.
+                </p>
+                <p class="mb-4">
+                    We offer a diverse range of courses including <strong>BCA, B.Sc. Computer Science, M.Sc. Computer Science, and PGDCA</strong>, all designed to reflect our commitment to excellence. Our graduates are highly sought after and have gone on to join <strong>leading companies worldwide</strong>. We emphasize the development of <strong>analytical thinking, problem-solving abilities</strong>, and <strong>effective communication skills</strong>. Our rigorous curriculum balances theory with hands-on practical experience, with over <strong>100 students</strong> actively engaged in voluntary software development projects for both government and non-government organizations.
+                </p>
+                
+                <div style="background-color: #f8f9fa; border-left: 5px solid #fd7e14; padding: 15px 20px; font-style: italic; color: #444; font-weight: 600;">
+                    Empowering students with knowledge, skills, and innovation to shape the future of technology.
+                </div>
+            </div>
+            <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/cs-lab-1.jpg" alt="Computer Science Lab">
+                    </div>
+                    <div class="col-6 text-start" style="margin-top: -150px;">
+                        <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/coding-session.jpg" alt="Coding Session">
+                    </div>
+                    <div class="col-6 text-end" style="margin-top: -150px;">
+                        <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/tech-conference.jpg" alt="Tech Conference">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Overview End -->
+
+
+<!-- Message from HOD Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="bg-light rounded">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg" style="object-fit: cover;" alt="HOD Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 d-flex flex-column justify-content-center p-5">
+                        <div style="text-align: center;">
+                            <h4 style="color: #fd7e14; margin-bottom: 0.2rem; font-size: 2.8rem;">Dr. Pradeep Sharma</h4>
+                            <h5 style="margin-top: 0; font-weight: normal; font-size: 1rem;">
+                                Head of the Department<br>
+                                (Department of Computer Science)
+                            </h5>
+                        </div>
+
+                        <p style="color: maroon; font-weight: bold; text-align: center; font-style: italic; font-size: 1.2rem; margin: 1.5rem 0;">
+                            “Learning technology is not just about tools,<br>but shaping thinkers who transform the world.”
+                        </p>
+
+                        <p style="text-align: justify; margin-top: 1.5rem;">
+                            As Head of the Department, I take great pride in leading a dynamic academic community focused on excellence in computer science education and research. It is my privilege to guide students toward intellectual growth, innovation, and personal development.
+                        </p>
+                        <p style="text-align: justify;">
+                            Our goal is to provide quality education that equips students with strong technical skills while fostering ethics, confidence, and adaptability. With a dedicated faculty, we create a supportive environment that encourages curiosity, critical thinking, and practical problem-solving.
+                        </p>
+                        <p style="text-align: justify;">
+                            We promote continuous learning through workshops, seminars, research, and industry partnerships. Students engage in innovative projects that prepare them to meet real-world challenges. I invite you to explore the opportunities in our department and join a community shaping the future of technology with knowledge and integrity.
+                        </p>
+                        <p class="mt-4 mb-0" style="text-align: right; font-size: 1.3rem; font-weight: bold; color: #000;">
+                            Dr. Pradeep Sharma
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Message from HOD End -->
+
+
+        <!-- Classes Start -->
+<div id="courses" class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Courses Offered</h1>
+            <p>Explore our diverse programs designed to equip students with deep knowledge and practical skills in Computer Science.</p>
+        </div>
+        <div class="row g-4">
+            <!-- B.Sc. in Computer Science -->
+<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="classes-item">
+        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+            <img class="img-fluid rounded-circle" src="img/course-dsc.jpg" alt="DSC">
+        </div>
+        <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+            <h3 class="mb-3">B.Sc. in Computer Science</h3>
+            <p>Build your foundation in core computer science principles.</p>
+            <!-- Trigger Modal -->
+            <button class="btn btn-primary rounded-pill mt-3 px-4" data-bs-toggle="modal" data-bs-target="#bscSyllabusModal">
+                Download Syllabus
+            </button>
+        </div>
+    </div>
+</div>
+                       <!-- M.Sc. in Computer Science -->
+<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="classes-item">
+        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+            <img class="img-fluid rounded-circle" src="img/course-msc.jpg" alt="MSC">
+        </div>
+        <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+            <h3 class="mb-3">M.Sc. in Computer Science</h3>
+            <p>Advance your expertise in computing, AI, and data science.</p>
+            <!-- Trigger Modal -->
+            <button class="btn btn-primary rounded-pill mt-3 px-4" data-bs-toggle="modal" data-bs-target="#mscSyllabusModal">
+                Download Syllabus
+            </button>
+        </div>
+    </div>
+</div>
+
+            <!-- BCA --> 
+<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="classes-item">
+        <div class="bg-light rounded-circle w-75 mx-auto p-3">
+            <img class="img-fluid rounded-circle" src="img/course-bca.jpg" alt="BCA">
+        </div>
+        <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+            <h3 class="mb-3">Bachelor's in Computer Application</h3>
+            <p>Kickstart your career in software development and IT.</p>
+            <!-- Trigger Modal -->
+            <button class="btn btn-primary rounded-pill mt-3 px-4" data-bs-toggle="modal" data-bs-target="#bcaSyllabusModal">
+                Download Syllabus
+            </button>
+        </div>
+    </div>
+</div>
+
+            <!-- PGDCA -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="classes-item">
+                    <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                        <img class="img-fluid rounded-circle" src="img/course-pgdca.jpg" alt="PGDCA">
+                    </div>
+                    <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                        <h3 class="mb-3">PG Diploma in Computer Application</h3>
+                        <p>Gain practical skills for modern IT careers in just one year.</p>
+                        <a href="syllabus/pddca.pdf" class="btn btn-primary rounded-pill mt-3 px-4">Download Syllabus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Classes End -->
+
+<!-- Question Paper Download Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="bg-light rounded p-5 shadow-lg wow fadeInUp" data-wow-delay="0.2s">
+      <h1 class="mb-4 text-center wow fadeInDown" data-wow-delay="0.1s">
+        Download Previous Year Question Papers
+      </h1>
+
+      <form id="questionPaperForm" onsubmit="downloadPDF(event)">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label for="course" class="form-label">Select Course</label>
+            <select id="course" class="form-select animated-input" required onchange="updateSemesters()">
+              <option value="" disabled selected>Select your course</option>
+              <option value="BSC">B.Sc. Computer Science</option>
+              <option value="MSC">M.Sc. Computer Science</option>
+              <option value="BCA">BCA</option>
+              <option value="PGDCA">PGDCA</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="semester" class="form-label">Select Semester</label>
+            <select id="semester" class="form-select animated-input" required onchange="updateSubjects()">
+              <option value="" disabled selected>Select semester</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="subject" class="form-label">Select Subject</label>
+            <select id="subject" class="form-select animated-input" required>
+              <option value="" disabled selected>Select subject</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="year" class="form-label">Select Year</label>
+            <select id="year" class="form-select animated-input" required>
+              <option value="" disabled selected>Select year</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-grad shadow mt-3 wow bounceIn" data-wow-delay="0.5s">
+            📄 Download PDF
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Question Paper Download End -->
+
+<script>
+  const semesterSelect = document.getElementById("semester");
+  const subjectSelect = document.getElementById("subject");
+
+  function updateSemesters() {
+    const course = document.getElementById("course").value;
+    semesterSelect.innerHTML = '<option value="" disabled selected>Select semester</option>';
+    subjectSelect.innerHTML = '<option value="" disabled selected>Select subject</option>';
+
+    if (course === "MSC") {
+      for (let i = 1; i <= 4; i++) {
+        const opt = document.createElement("option");
+        opt.value = i;
+        opt.textContent = `Semester ${i}`;
+        semesterSelect.appendChild(opt);
+      }
+    }
+  }
+
+  function updateSubjects() {
+    const course = document.getElementById("course").value;
+    const semester = semesterSelect.value;
+    subjectSelect.innerHTML = '<option value="" disabled selected>Select subject</option>';
+
+    if (course === "MSC") {
+      let subjects = [];
+
+      switch (semester) {
+        case "1":
+          subjects = [
+            "Computer and Communication Fundamentals",
+            "Discrete Structure",
+            "Operating System",
+            "Programming and Problem Solving Through C Language"
+          ];
+          break;
+        case "2":
+          subjects = [
+            "Computer Network",
+            "Data Structures Using C++",
+            "Computer Oriented Numerical and Statistical Methods",
+            "Database Management System"
+          ];
+          break;
+        case "3":
+          subjects = [
+            "Object Oriented Programming Using Java",
+            "Database Applications and Tools",
+            "Theory of Computation",
+            "Linux/Unix Administration"
+          ];
+          break;
+        case "4":
+          subjects = [
+            "System Analysis and Design",
+            "Design and Analysis of Algorithms",
+            "Internet and Web Technology",
+            "Computer Graphics and Multimedia",
+            "Python for Data Science"
+          ];
+          break;
+      }
+
+      subjects.forEach(sub => {
+        const opt = document.createElement("option");
+        opt.value = sub;
+        opt.textContent = sub;
+        subjectSelect.appendChild(opt);
+      });
+    }
+  }
+</script>
+
+<style>
+  /* Input focus animation */
+  .animated-input {
+    transition: box-shadow 0.3s, transform 0.2s;
+  }
+  .animated-input:focus {
+    box-shadow: 0 0 8px rgba(253, 126, 20, 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Gradient button */
+  .btn-grad {
+    background: linear-gradient(90deg, #fd7e14, #ffae42);
+    color: #fff;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-grad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<script>
+    <script>
+  const subjectOptions = {
+    MSC: {
+      "1": [
+        "Computer and Communication Fundamentals",
+        "Discrete Structure",
+        "Operating System",
+        "Programming and Problem Solving Through C Language"
+      ],
+      "2": [
+        "Computer Network",
+        "Data Structures Using C",
+        "Computer Oriented Numerical and Statistical Methods",
+        "Database Management System"
+      ],
+      "3": [
+        "Object Oriented Programming Using Java",
+        "Database Applications and Tools",
+        "Theory of Computation",
+        "Linux/Unix Administration"
+      ],
+      "4": [
+        "System Analysis and Design",
+        "Design and Analysis of Algorithms",
+        "Internet and Web Technology",
+        "Computer Graphics and Multimedia",
+        "Python for Data Science"
+      ]
+    }
+  };
+
+  function updateSemesters() {
+    const course = document.getElementById("course").value;
+    const semester = document.getElementById("semester");
+    semester.innerHTML = `<option value="" disabled selected>Select semester</option>`;
+
+    if (course === "MSC") {
+      for (let i = 1; i <= 4; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = `Semester ${i}`;
+        semester.appendChild(option);
+      }
+    } else {
+      // Default 6 semesters for other courses
+      for (let i = 1; i <= 6; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = `Semester ${i}`;
+        semester.appendChild(option);
+      }
+    }
+
+    // Clear subject list when course changes
+    updateSubjects();
+  }
+
+  function updateSubjects() {
+    const course = document.getElementById("course").value;
+    const semester = document.getElementById("semester").value;
+    const subject = document.getElementById("subject");
+
+    subject.innerHTML = `<option value="" disabled selected>Select subject</option>`;
+
+    if (subjectOptions[course] && subjectOptions[course][semester]) {
+      subjectOptions[course][semester].forEach((subj) => {
+        const option = document.createElement("option");
+        option.value = subj;
+        option.text = subj;
+        subject.appendChild(option);
+      });
+    } else {
+      const option = document.createElement("option");
+      option.value = "";
+      option.text = "No subjects available";
+      subject.appendChild(option);
+    }
+  }
+
+  // Attach event listener
+  document.getElementById("semester").addEventListener("change", updateSubjects);
+</script>
+
+  
+</script>
+<script>
+  function downloadPDF(event) {
+    event.preventDefault(); // Prevent form from actually submitting
+
+    const course = document.getElementById("course").value;
+    const semester = document.getElementById("semester").value;
+    const subject = document.getElementById("subject").value;
+    const year = document.getElementById("year").value;
+
+    // If any field is empty, alert
+    if (!course || !semester || !subject || !year) {
+      alert("Please select all the fields!");
+      return;
+    }
+
+    // Build the filename
+    const fileName = `${course}-${semester}-${subject}-${year}.pdf`;
+
+    // Open the file from your folder (make sure the path is correct)
+    const filePath = `papers/${fileName}`;
+
+    // Open PDF in new tab
+    window.open(filePath, "_blank");
+  }
+</script>
+
+
+        <!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Faculty:</h1>
+            <p>Meet the guiding minds who inspire, mentor, and lead.<br>
+                Our faculty brings knowledge, experience, and dedication.</p>
+        </div>
+        <div class="row g-4">
+<!-- Faculty 1 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+        <div class="team-text">
+            <h3>Dr. Jaya<br>Sharma</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">Ph.D.</span>,
+                    <span style="color: #000; font-weight: bold;">MCA</span>,
+                    <span style="color: #000; font-weight: bold;">M.A. (Psychology)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Faculty 2 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+        <div class="team-text">
+            <h3>Dr. Ravi<br>Pathariya</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">Ph.D.</span>,
+                    <span style="color: #000; font-weight: bold;">M.Phil. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">MCA</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 3 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Yugal Kishor<br>Sharma</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Phil. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 4 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-4.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Arti<br>Shrivastav</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Phil. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 5 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-5.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Manish<br>Singh</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Tech. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>,
+                    <span style="color: #000; font-weight: bold;">NET</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 6 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-6.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Manoharlal<br>Raksha</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">MCA</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 7 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-7.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Sarita<br>Sharma</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>,
+                    <span style="color: #000; font-weight: bold;">MPSET</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 8 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-8.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Divya<br>Rathore</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">NET</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty 9 -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+    <div class="team-item position-relative">
+        <img class="img-fluid rounded-circle w-75" src="img/team-9.jpg" alt="">
+        <div class="team-text">
+            <h3>Prof. Bhagyshree<br>Pathak</h3>
+            <p>Guest Faculty</p>
+            <div style="text-align: center; margin-top: 1px;">
+                <p style="margin: 0;">
+                    <span style="color: #fd7e14; font-weight: bold;">Qualifications:</span>
+                    <span style="color: #000; font-weight: bold;">M.Phil. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">M.Sc. (CS)</span>,
+                    <span style="color: #000; font-weight: bold;">Ph.D.*</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team End -->
+
+        <!-- Team End -->
+
+
+<!-- Testimonial Start -->
+        <!-- Alumni Testimonials Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp mb-5" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Proud Alumni</h1>
+            <p>Our alumni continue to shine across the nation, achieving excellence in various prestigious roles.</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <!-- Alumni 1 -->
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">"The foundation I received from the Computer Science department played a pivotal role in my journey to become a district collector."</p>
+                <div class="d-flex align-items-center bg-white me-n5 border rounded p-3">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/alumni-1.jpg" style="width: 45px; height: 45px;" alt="Karamveer Sharma">
+                    <div class="ps-3">
+                        <h6 class="mb-1">Mr. Karamveer Sharma</h6>
+                        <small>Collector, Khargone</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 2 -->
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">"Holkar College equipped me with both technical and leadership skills to succeed in MPPSC."</p>
+                <div class="d-flex align-items-center bg-white me-n5 border rounded p-3">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/alumni-2.jpg" style="width: 45px; height: 45px;" alt="Manish Dhangar">
+                    <div class="ps-3">
+                        <h6 class="mb-1">Mr. Manish Dhangar</h6>
+                        <small>Deputy Collector, MPPSC</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 3 -->
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">"My experience at the CS department helped me secure a solid career in the finance sector."</p>
+                <div class="d-flex align-items-center bg-white me-n5 border rounded p-3">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/alumni-3.jpg" style="width: 45px; height: 45px;" alt="Vijay Bundela">
+                    <div class="ps-3">
+                        <h6 class="mb-1">Mr. Vijay Bundela</h6>
+                        <small>GST Inspector, Pitampur Dhar</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 4 -->
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">"Thanks to the CS department's practical training and mentorship, I achieved my goal of joining Income Tax services."</p>
+                <div class="d-flex align-items-center bg-white me-n5 border rounded p-3">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/alumni-4.jpg" style="width: 45px; height: 45px;" alt="Abhishek Dhangi">
+                    <div class="ps-3">
+                        <h6 class="mb-1">Mr. Abhishek Dhangi</h6>
+                        <small>Income Tax Inspector, Mumbai</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 5 -->
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">"Proud to have studied in a department that values research, innovation, and national service."</p>
+                <div class="d-flex align-items-center bg-white me-n5 border rounded p-3">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/alumni-5.jpg" style="width: 45px; height: 45px;" alt="Yashvani Hada">
+                    <div class="ps-3">
+                        <h6 class="mb-1">Ms. Yashvani Hada</h6>
+                        <small>Scientist, DRDO</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Alumni Testimonials End -->
+
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bhawarkuan, A.B. Road, Indore (M.P.) 452001 , INDIA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0731-2464111 , 0731-2764027</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>principal@collegeholkar.org</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Computer Science Department Website</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">Tushar, Archana, Amaan</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
